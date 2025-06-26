@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Plataforma de apostas online com acesso a Acertos Club, Aguia Oficial, Tigers Club e suporte via WhatsApp. Torne-se um promotor com a Dama da Sorte.">
+    <meta name="keywords" content="apostas online, Acertos Club, Aguia Oficial, Tigers Club, Dama da Sorte, promotor de apostas, betting platform">
+    <meta name="author" content="Dama da Sorte">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Plataforma de Apostas Online - Dama da Sorte">
+    <meta property="og:description" content="Acesse Acertos Club, Aguia Oficial, Tigers Club e suporte via WhatsApp. Torne-se um promotor com a Dama da Sorte.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://<username>.github.io/<repository-name>">
+    <meta property="og:image" content="https://<username>.github.io/<repository-name>/favicon.ico">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Plataforma de Apostas Online - Dama da Sorte">
+    <meta name="twitter:description" content="Acesse Acertos Club, Aguia Oficial, Tigers Club e suporte via WhatsApp. Torne-se um promotor.">
+    <meta name="twitter:image" content="https://<username>.github.io/<repository-name>/favicon.ico">
+    <link rel="canonical" href="https://<username>.github.io/<repository-name>">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Plataforma de Apostas Online - Dama da Sorte</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .message-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 8px;
+            position: relative;
+            text-align: center;
+            font-size: 14px;
+            min-height: 30px;
+            flex-shrink: 0;
+        }
+        .message-bar a {
+            color: #25D366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .message-bar a:hover {
+            text-decoration: underline;
+        }
+        .close-btn {
+            position: absolute;
+            right: 8px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        main {
+            flex-grow: 1;
+            display: flex;
+            min-height: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px;
+            background-color: #004085;
+            flex-shrink: 0;
+            min-height: 50px;
+        }
+        footer button, footer a {
+            padding: 8px 12px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+            min-width: 100px;
+        }
+        footer button:hover, footer a:hover {
+            filter: brightness(85%);
+        }
+        .acertos-btn {
+            background-color: #004085;
+        }
+        .aguia-btn {
+            background-color: #4A7043;
+        }
+        .tigers-btn {
+            background: linear-gradient(90deg, #FF6200, #000000);
+        }
+        .suporte-btn {
+            background-color: #25D366;
+        }
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+        /* Responsive adjustments for smartphones */
+        @media (max-width: 600px) {
+            .message-bar {
+                font-size: 12px;
+                padding: 6px;
+                min-height: 25px;
+            }
+            .close-btn {
+                font-size: 14px;
+                right: 6px;
+            }
+            main {
+                padding-bottom: 60px; /* Space for fixed footer */
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                gap: 6px;
+                padding: 8px;
+                min-height: 50px;
+                z-index: 1000;
+            }
+            footer button, footer a {
+                padding: 6px 8px;
+                font-size: 12px;
+                min-width: 80px;
+            }
+            .whatsapp-icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="messageBar" class="message-bar">
+        <span>Torne-se um promotor clicando <a href="https://www.damadasorte.com.br" target="_blank" aria-label="Torne-se um promotor com Dama da Sorte">aqui</a></span>
+        <button class="close-btn" aria-label="Fechar mensagem" onclick="document.getElementById('messageBar').style.display='none'; document.querySelector('main').style.paddingTop='0';">×</button>
+    </div>
+    <main>
+        <iframe id="contentFrame" src="https://app.acertos.club/pr/T5Sf26JH" title="Conteúdo da Plataforma de Apostas" alt="Plataforma de apostas online"></iframe>
+    </main>
+    <footer id="buttonContainer">
+        <button class="acertos-btn" onclick="changeIframe('https://app.acertos.club/pr/T5Sf26JH', '#004085')" aria-label="Acessar Acertos Club">Acertos Club</button>
+        <button class="aguia-btn" onclick="changeIframe('https://app.aguiaoficial.com/pr/XG04WTry', '#4A7043')" aria-label="Acessar Aguia Oficial">Aguia Oficial</button>
+        <button class="tigers-btn" onclick="changeIframe('https://app.tigersclub.vip/pr/k58hQ1An', '#FF6200')" aria-label="Acessar Tigers Club">Tigers Club</button>
+        <a class="suporte-btn" href="https://wa.me/5583994121109" target="_blank" onclick="changeContainerColor('#25D366')" aria-label="Contato via WhatsApp">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.134.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.074-.149-.669-.719-.911-.99-.242-.271-.416-.471-.642-.471H7.5c-.223 0-.47.074-.669.223-.297.223-1.115.891-1.115 2.176 0 1.285.966 2.529 1.1 2.678.133.148 1.874 2.863 4.55 4.014 1.58.682 2.822.892 3.789.892.975 0 1.774-.446 2.23-.743.446-.297.743-.669.892-.967.149-.297.297-.595.223-.744-.074-.148-.322-.223-.595-.297zm-5.487-13c-5.522 0-10 4.477-10 10 0 2.136.671 4.116 1.81 5.74L2 22l5.26-1.794c1.623 1.139 3.604 1.794 5.74 1.794 5.522 0 10-4.477 10-10s-4.478-10-10-10zm0 18c-1.943 0-3.762-.586-5.29-1.597l-.379-.253-3.112 1.06 1.06-3.112-.253-.379c-1.01-1.528-1.597-3.347-1.597-5.29 0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"/>
+            </svg>
+            Suporte
+        </a>
+    </footer>
+    <script>
+        function changeIframe(url, color) {
+            console.log('Changing iframe to: ' + url);
+            try {
+                document.getElementById('contentFrame').src = url;
+                document.getElementById('buttonContainer').style.backgroundColor = color;
+            } catch (e) {
+                console.error('Error changing iframe or color: ', e);
+            }
+        }
+        function changeContainerColor(color) {
+            console.log('Changing footer color to: ' + color);
+            try {
+                document.getElementById('buttonContainer').style.backgroundColor = color;
+            } catch (e) {
+                console.error('Error changing footer color: ', e);
+            }
+        }
+    </script>
+</body>
